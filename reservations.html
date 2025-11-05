@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Réservations - DoDo Travels</title>
+
+</head>
+
+<body>
+
+	<header>
+		<div class="logo">
+			<img src="" alt="Logo MegaDodo Travel" />
+			<h1>MEGADODO TRAVELS</h1>
+		</div>
+	</header>
+	<main>
+		<h1>Réservez dès maintenant</h1>
+		<section>
+			<h2>Découvrez l'équipe sur le terrain</h2>
+			<div class="liste-personnel">
+				<figure>
+					<img src="images/sophieraymond.png" alt="">
+					<figcaption>Sophie RAYMOND - Capitaine</figcaption>
+				</figure>
+				<figure>
+					<img src="images/alfredbutler.png" alt="">
+					<figcaption>Alfred BUTLER - Maître d'Hôtel</figcaption>
+				</figure>
+				<figure>
+					<img src="images/jenkinsalmar.png" alt="">
+					<figcaption>Jenkins ALMAR - Guide local sur Terre</figcaption>
+				</figure>
+				<figure>
+					<img src="" alt="">
+					<figcaption>Azlbu GLOB - Guide local sur Zorg</figcaption>
+				</figure>
+				<figure>
+					<img src="images/zorg.png" alt="">
+					<figcaption>Ozlo KLOB - Moniteur de Ski sur Kram</figcaption>
+				</figure>
+				<figure>
+					<img src="images/zorg.png" alt="">
+					<figcaption>Dromo GLEB - Maître d'Hôtel</figcaption>
+				</figure>
+				<figure>
+					<img src="images/zorg.png" alt="">
+					<figcaption>Barmpo GLUB - Capitaine</figcaption>
+				</figure>
+			</div>
+		</section>
+		<section>
+			<h2>Réservez votre voyage</h2>
+			<form action="">
+				<h3>Votre voyage</h3>
+				<label for="voyage">Choisissez votre destination</label>
+				<select name="voyage" id="voyage">
+					<option value="0">Choisissez une option</option>
+					<option value="1">Zorg Resort - Planete Zorg</option>
+					<option value="2">Station de Ski Skram - Planete Kram</option>
+					<option value="3">EUROZorg Hotel - Planete Terre</option>
+				</select>
+				<p id="info-crew">Votre voyage sera assuré par : ------</p>
+				<label for="depart">Départ</label>
+				<input type="date" name="depart" id="">
+				<label for="retour">Retour</label>
+				<input type="date" name="retour" id="">
+				<br>
+				<label for="nb_adultes">Nombre d'Adultes : </label>
+				<input type="number" name="nb_adultes" min="1" max="10" value="1">
+				<label for="nb_enfants">Nombre d'Enfants : </label>
+				<input type="number" name="nb_enfants" min="0" max="10" value="0">
+				<h3>Informations personnelles</h3>
+				<p>Nous n'avons besoin que des informations d'un des adultes</p>
+				<label for="prenom">Prénom</label>
+				<input type="text" name="prenom" placeholder="Pierre">
+				<label for="nom">Nom de famille</label>
+				<input type="text" name="nom" placeholder="DUPUIS">
+				<br>
+				<label for="date_naissance">Date de Naissance</label>
+				<input type="date" name="date_naissance">
+				<label for="planete">Planète de résidence</label>
+				<select name="planete" id="planete">
+					<option value="terre">Terre</option>
+					<option value="zorg">Zorg</option>
+					<option value="kram">Kram</option>
+					<option value="autre">Autre planète</option>
+				</select>
+			</form>
+		</section>
+	</main>
+	<aside>
+		<h2>Retrouvez-nous en agence à Kourou !</h2>
+		<p>15 Rue des Alizés, 97310 Kourou, France</p>
+		<iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-52.64834046363831%2C5.159638731402266%2C-52.640771269798286%2C5.164687545221923&amp;layer=mapnik&amp;marker=5.162163143336124%2C-52.64455586671829" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=5.162163&amp;mlon=-52.644556#map=18/5.162163/-52.644556">Afficher une carte plus grande</a></small>
+	</aside>
+	<footer>
+	</footer>
+<script>
+	var crew = [
+		'------',
+		'Sophie RAYMOND (Capitaine), Dromo GLEB (Maître d\'Hotel), Azlbu GLOB (Guide)',
+		'Barmpo GLUB (Capitaine), Dromo GLEB (Maître d\'Hotel), Ozlo KLOB (Guide)',
+		'Barmpo GLUB (Capitaine), Alfred BUTLER (Maître d\'Hotel), Jenkins ALMAR (Guide)'
+	]
+		
+	document.getElementById("voyage").addEventListener('change', (ev) => {
+		document.getElementById("info-crew").innerText = "Votre voyage sera assuré par : " + crew[ev.target.value || 0]
+	})
+</script>
+</body>
+</html>
