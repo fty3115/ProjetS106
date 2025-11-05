@@ -1,0 +1,20 @@
+.liste-personnel {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.liste-personnel figure {
+   width: 12vw;
+   min-width: 12em;
+}
+
+.liste-personnel figure figcaption {
+   text-align: center;
+}
+
+.liste-personnel figure img {
+   width: 100%;
+   border-radius: 20px;
+   background-color: white;
+}
