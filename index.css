@@ -2,26 +2,212 @@
 
  *{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+   
 }
 
- header {
-	background-color: rgb(43, 43, 119);
-	text-align:center;
-    color: white;
- }
+
+header {
+  background-color: #12112b;
+  color: #00ffff;
+  padding: 20px;
+  position: relative;
+}
+
+
+header .logo {
+  display: flex; 
+  align-items: center;  
+    
+}
+
+header .logo h1 {
+  font-size: 2em;
+  margin: 0 0 5px 0;
+ 
+}
+
+header .logo img {
+  height: 60px; 
+   margin : 5px;             
+}
+
+
+header .slogan {
+  text-align: center;      
+  color: #ffffff;          
+  font-size: 2em;         
+  font-style: normal;      
+  margin: 0 0 20px 0; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+header .description {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.5;
+
+}
+
+
 
  footer {
   background-color: rgb(55, 28, 152);
   color: white;    
-  text-align: center;   
+  text-align: center;  
+  margin: 0px;
+  padding: 0px; 
   }
 
- nav {
-    align-items: center;
-    background-color: #05469b;
-    border-bottom: 4px solid #f4e805;
+
+nav {
+  background-color: #1a1a2e; 
+  padding: 10px 20px;
+  line-height: 40px;         
+  text-align: right; 
+  border-bottom: 4px solid #f0f405;      
+  top: 0;                     
 }
 
- nav .auteurs {
-    font-weight: bold;
-    }
+nav a {
+  color: #00ffff;
+  text-decoration: none;
+  margin-right: 15px;        
+  vertical-align: middle;    
+}
+
+nav img {
+  height: 40px;             
+  vertical-align: middle;    
+}
+
+nav .auteurs {
+  float:left ;              
+  color: #00ffff;
+  font-weight: bold;
+  vertical-align: middle;    
+}
+
+
+section.destinations { 
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;            
+  gap: 20px;                  
+  justify-content: center;    
+}
+
+main {
+ background-image: url("./images/espace.jpg"); 
+}
+
+main h2 {
+  padding : 10px ; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:white;
+}
+
+article.voyage {
+  background-color: #1a1a2e;  
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;        
+  width: 220px;               
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3); 
+  display: flex;
+  flex-direction: column;     
+  align-items: center;        
+  text-align: center;
+}
+
+
+article.voyage .button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #00ffff;
+  color: #1a1a2e;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+article.voyage .button:hover {
+  background-color: #00bfbf;  
+}
+
+article.voyage h3{
+display: inline-block;
+border-radius: 5px;
+background-color:#00ffff;
+color: black;
+padding : 5px;
+
+
+}
+.accroche{
+  margin: 8px;
+}
+
+.prix{
+  margin: 8px;
+
+}
+
+.info{
+display: block;
+
+}
+
+.ici :hover{
+  
+}
+footer {
+  background-color: #1a1a2e; 
+  color: #00ffff;
+  padding: 20px;
+}
+
+footer .footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-wrap: wrap;              
+}
+
+footer .footer-membres ul {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+footer .footer-membres li {
+  margin: 2px 0;
+}
+
+
+footer .footer-rapports {
+  text-align: center;
+}
+
+footer .footer-rapports a {
+  display: inline-block;
+  color: #00ffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer .footer-rapports a:hover {
+  text-decoration: underline;
+}
+
+
+footer .footer-iut img {
+  height: 60px;
+}
+
+

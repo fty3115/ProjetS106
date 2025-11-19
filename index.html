@@ -5,24 +5,34 @@
 	<meta charset="utf-8">
      <title>Page d'accueil - Megadodo</title>
 	 <link rel="stylesheet" href="./index.css"/>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
+	<nav>
+		<span class="auteurs">ALEXIS & MARIE</span>
+		<a href="index.html">
+		<img src="./images/ecusson_dodo.svg" alt="Logo MegaDodo Travel" />
+		</a>
+		<a href="">VOYAGE</a>
+		<a href="apropos.html" class="ici">À PROPOS</a>	
+	</nav>
 	<header>
-		<nav>
-			<span class="auteurs">ALEXIS & MARIE</span>
-			<a href="index.html">
-			  <img src="" alt="Logo MegaDodo Travel" />
-			</a>
-			<a href="">VOYAGE</a>
-			<a href="">À PROPOS</a>		
-		</nav>
-		<h1>MegaDodo Travel</h1>
 		<div class="logo">
-			<img src="" alt="Logo MegaDodo Travel" />	  
+			<a href="index.html">
+			<img src="./images/ecusson_dodo.svg" alt="Logo MegaDodo Travel" />
+			</a>
+			<h1>MegaDodo Travel</h1>
+			
 		</div>
-		<p class="slogan">UN PEU PLUS PRÈS DES ÉTOILES !</p>
+		<div>
+			<p class="slogan">UN PEU PLUS PRÈS DES ÉTOILES !</p>
+			<p class="description">
+				MegaDodo Travel révolutionne le voyage ! Nous sommes la seule agence à proposer de véritables échanges culturels entre humains et extraterrestres.  
+				Sortez des circuits classiques et découvrez des planètes inédites comme Zorg, Kram ou Kro, vivez des expériences uniques et plongez dans des univers que personne d’autre n’ose explorer.
+			</p>
+		</div>
 		
 	</header>
 	<main>
@@ -30,76 +40,92 @@
 		<section class="destinations">
     		<article class="voyage">
 				<h3>TERRE</h3>
-				<p>Découvrez la planète bleue et ses merveilles culturelles et naturelles.</p>
-				<p>Profil cible :</p>
+				<p class="accroche" >Découvrez la planète bleue et ses merveilles culturelles et naturelles.</p>
+				<p class="pf">Profil cible :</p>
 				<ul>
 					<li>Visiteurs curieux des civilisations humaines</li>
+					<li>Aventuriers dans l'âme</li>
 				</ul>
-				<p class="prix">À PARTIR DE</p>
-				<a href="">
-  					<button>Réserver</button>
-				</a>
+				<div class="info">
+					<p class="prix">À PARTIR DE</p>
+					<a href="reservations.html" class="button">
+						Réserver
+					</a>
+				</div>
     		</article>
 			<article class="voyage">
       			<h3>ZORG</h3>
-      			<p>Vivez une immersion totale sur Zorg. Un séjour dépaysant entre science et magie.</p>
-				<p>Profil cible :</p>
+      			<p class="accroche">Vivez une immersion totale sur Zorg. Un séjour dépaysant entre science et magie.</p>
+				<p class="pf">Profil cible :</p>
 				<ul>
-					<li>Humains amateurs de sensations extraterrestres</li>
+					<li>Aventuriers dans l'âme</li>
+					<li>Famille</li>
 				</ul>
-				<p class="prix">À PARTIR DE </p>
-				<a href="">
-  					<button>Réserver</button>
-				</a>
+				<div class="info">
+					<p class="prix">À PARTIR DE </p>
+					<a href="reservations.html" class="button">
+						Réserver
+					</a>
+				</div>
     		</article>
 			<article class="voyage">
       			<h3>KRAM</h3>
-      			<p>Explorez Kram, un monde calme et mystérieux. Idéal pour les aventuriers.</p>
-				<p>Profil cible :</p>
+      			<p class="accroche">Explorez Kram, un monde calme et mystérieux. Idéal pour les aventuriers.</p>
+				<p class="pf">Profil cible :</p>
 				<ul>
-					<li>Parfait pour les amateurs de sports extrêmes et de grands espaces</li>
+					<li>Les amateurs de sports extrêmes et de grands espaces</li>
+					<li>Fan de Science-Fiction</li>
+
 				</ul>
-				<p class="prix">À PARTIR DE</p>
-				<a href="">
-  					<button>Réserver</button>
-				</a>
+				<div class="info">
+					<p class="prix">À PARTIR DE</p>
+					<a href="reservations.html" class="button">
+						Réserver
+					</a>
+				</div>
 			</article>
 			<article class="voyage">
       			<h3>KRO</h3>
-      			<p>Petite planète chaleureuse réputée dans toute la galaxie pour sa cuisine cosmique !</p>
-			    <p>Profil cible :</p> 
+      			<p class="accroche">Petite planète chaleureuse réputée dans toute la galaxie pour sa cuisine cosmique !</p>
+			    <p class="pf">Profil cible :</p> 
 				<ul>
 					<li>Amateurs de gastronomie et de découvertes culturelles</li>
+					<li>Famille</li>
 				</ul>
-				<p class="prix">À PARTIR DE</p>
-				<a href="">
-  					<button>Réserver</button>
-				</a>
+				<div class="info">
+					<p class="prix">À PARTIR DE</p>
+					<a href="reservations.html" class="button">
+						Réserver
+					</a>
+				</div>
 			</article>
 
   		</section>
 	
 	</main>
 	<footer>
-			<section>
-				<h2> Membre du projet</h2>
-				<ul>
-					<li>Alexis</li>
-					<li>Marie</li>
-				</ul>
-								
-			</section>
+  <div class="footer">
+    <div class="footer-membres">
+      <h2>Membre du projet</h2>
+      <ul>
+        <li>Alexis</li>
+        <li>Marie</li>
+      </ul>
+    </div>
 
-			<section>
-				<h2> Rapport </h2>
-				<a href="">Format Texte</a>
-				<a href="">Format pdf</a>	
-			</section>
-			
-			<div class="iut">
-				<img src="Logo.jpg" alt="Logo IUT Orsay" />	  
-			</div>
-	</footer>
+    <div class="footer-rapports">
+      <h2>Rapport</h2>
+      <a href="">Format Texte</a>
+      <a href="">Format PDF</a>
+    </div>
+
+    <div class="footer-iut">
+      <img src="Logo.jpg" alt="Logo IUT Orsay" />
+    </div>
+  </div>
+</footer>
+
+	
 
 
 </body>
