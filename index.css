@@ -2,26 +2,233 @@
 
  *{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
 }
-
- header {
+ /*header {
 	background-color: rgb(43, 43, 119);
 	text-align:center;
-    color: white;
+   color: white;
+   margin: 0px;
+   padding: 0px;
  }
+ header {
+  background-color: #12112b; 
+  text-align: center;        
+  padding: 20px 10px;        
+  color: #00ffff;            
+}
+
+header .logo img {
+  height: 80px;              
+  vertical-align: middle;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 10px 0 5px 0;
+}
+
+header .slogan {
+  font-style: italic;
+  font-size: 1.2em;
+  margin: 5px 0 0 0;
+  color: #ffffff;
+} */
+
+header {
+  background-color: #12112b;
+  color: #00ffff;
+  padding: 20px;
+  position: relative;
+}
+
+
+header .logo {
+  display: flex;
+  flex-direction: column;  
+  align-items: flex-start; 
+  max-width: 200px;        
+}
+
+header .logo h1 {
+  font-size: 1.5em;
+  margin: 0 0 5px 0;
+}
+
+header .logo img {
+  height: 50px;            
+}
+
+
+header .slogan {
+  text-align: center;      
+  color: #ffffff;          
+  font-size: 2em;         
+  font-style: normal;      
+  margin: 0 0 20px 0;      
+}
+
+header .description {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+
 
  footer {
   background-color: rgb(55, 28, 152);
   color: white;    
-  text-align: center;   
+  text-align: center;  
+  margin: 0px;
+  padding: 0px; 
   }
 
- nav {
+ /*nav {
     align-items: center;
     background-color: #05469b;
     border-bottom: 4px solid #f4e805;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    width: 10;
 }
 
  nav .auteurs {
     font-weight: bold;
-    }
+    }*/
+
+/*nav {
+  background-color: #1a1a2e; 
+  padding: 10px;
+  text-align: right;          
+  border-bottom: 4px solid #f0f405;
+}
+
+nav a {
+  color: #00ffff;
+  text-decoration: none;
+  margin-right: 15px;        
+nav .auteurs {
+  float: left;              
+  color: #00ffff;
+  font-weight: bold;
+  vertical-align: middle;
+}*/
+
+nav {
+  background-color: #1a1a2e; 
+  padding: 10px 20px;
+  line-height: 40px;         
+  text-align: right; 
+  border-bottom: 4px solid #f0f405;
+  position: sticky;           
+  top: 0;                     
+}
+
+nav a {
+  color: #00ffff;
+  text-decoration: none;
+  margin-right: 15px;        
+  vertical-align: middle;    
+}
+
+nav img {
+  height: 40px;             
+  vertical-align: middle;    
+}
+
+nav .auteurs {
+  float:left ;              
+  color: #00ffff;
+  font-weight: bold;
+  vertical-align: middle;    
+}
+
+
+section.destinations {
+  background-color: #a0c4ff;  
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;            
+  gap: 20px;                  
+  justify-content: center;    
+}
+
+
+article.voyage {
+  background-color: #1a1a2e;  
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;        
+  width: 220px;               
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3); 
+  display: flex;
+  flex-direction: column;     
+  align-items: center;        
+  text-align: center;
+}
+
+
+article.voyage .button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #00ffff;
+  color: #1a1a2e;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+article.voyage .button:hover {
+  background-color: #00bfbf;  
+}
+
+footer {
+  background-color: #1a1a2e; 
+  color: #00ffff;
+  padding: 20px;
+}
+
+footer .footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-wrap: wrap;              
+}
+
+footer .footer-membres ul {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+footer .footer-membres li {
+  margin: 2px 0;
+}
+
+
+footer .footer-rapports {
+  text-align: center;
+}
+
+footer .footer-rapports a {
+  display: inline-block;
+  color: #00ffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer .footer-rapports a:hover {
+  text-decoration: underline;
+}
+
+
+footer .footer-iut img {
+  height: 60px;
+}

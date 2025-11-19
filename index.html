@@ -5,24 +5,33 @@
 	<meta charset="utf-8">
      <title>Page d'accueil - Megadodo</title>
 	 <link rel="stylesheet" href="./index.css"/>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
+	<nav>
+		<span class="auteurs">ALEXIS & MARIE</span>
+		<a href="index.html">
+		<img src="./images/ecusson_dodo.svg" alt="Logo MegaDodo Travel" />
+		</a>
+		<a href="">VOYAGE</a>
+		<a href="apropos.html" class="ici">À PROPOS</a>	
+	</nav>
 	<header>
-		<nav>
-			<span class="auteurs">ALEXIS & MARIE</span>
-			<a href="index.html">
-			  <img src="" alt="Logo MegaDodo Travel" />
-			</a>
-			<a href="">VOYAGE</a>
-			<a href="">À PROPOS</a>		
-		</nav>
-		<h1>MegaDodo Travel</h1>
 		<div class="logo">
-			<img src="" alt="Logo MegaDodo Travel" />	  
+			<h1>MegaDodo Travel</h1>
+			<a href="index.html">
+			<img src="./images/ecusson_dodo.svg" alt="Logo MegaDodo Travel" />
+			</a>
 		</div>
-		<p class="slogan">UN PEU PLUS PRÈS DES ÉTOILES !</p>
+		<div>
+			<p class="slogan">UN PEU PLUS PRÈS DES ÉTOILES !</p>
+			<p class="description">
+				MegaDodo Travel révolutionne le voyage ! Nous sommes la seule agence à proposer de véritables échanges culturels entre humains et extraterrestres.  
+				Sortez des circuits classiques et découvrez des planètes inédites comme Zorg, Kram ou Kro, vivez des expériences uniques et plongez dans des univers que personne d’autre n’ose explorer.
+			</p>
+		</div>
 		
 	</header>
 	<main>
@@ -36,8 +45,8 @@
 					<li>Visiteurs curieux des civilisations humaines</li>
 				</ul>
 				<p class="prix">À PARTIR DE</p>
-				<a href="">
-  					<button>Réserver</button>
+				<a href="reservations.html" class="button">
+  					Réserver
 				</a>
     		</article>
 			<article class="voyage">
@@ -48,8 +57,8 @@
 					<li>Humains amateurs de sensations extraterrestres</li>
 				</ul>
 				<p class="prix">À PARTIR DE </p>
-				<a href="">
-  					<button>Réserver</button>
+				<a href="reservations.html" class="button">
+  					Réserver
 				</a>
     		</article>
 			<article class="voyage">
@@ -60,8 +69,8 @@
 					<li>Parfait pour les amateurs de sports extrêmes et de grands espaces</li>
 				</ul>
 				<p class="prix">À PARTIR DE</p>
-				<a href="">
-  					<button>Réserver</button>
+				<a href="reservations.html" class="button">
+  					Réserver
 				</a>
 			</article>
 			<article class="voyage">
@@ -72,8 +81,8 @@
 					<li>Amateurs de gastronomie et de découvertes culturelles</li>
 				</ul>
 				<p class="prix">À PARTIR DE</p>
-				<a href="">
-  					<button>Réserver</button>
+				<a href="reservations.html" class="button">
+  					Réserver
 				</a>
 			</article>
 
@@ -81,25 +90,28 @@
 	
 	</main>
 	<footer>
-			<section>
-				<h2> Membre du projet</h2>
-				<ul>
-					<li>Alexis</li>
-					<li>Marie</li>
-				</ul>
-								
-			</section>
+  <div class="footer">
+    <div class="footer-membres">
+      <h2>Membre du projet</h2>
+      <ul>
+        <li>Alexis</li>
+        <li>Marie</li>
+      </ul>
+    </div>
 
-			<section>
-				<h2> Rapport </h2>
-				<a href="">Format Texte</a>
-				<a href="">Format pdf</a>	
-			</section>
-			
-			<div class="iut">
-				<img src="Logo.jpg" alt="Logo IUT Orsay" />	  
-			</div>
-	</footer>
+    <div class="footer-rapports">
+      <h2>Rapport</h2>
+      <a href="">Format Texte</a>
+      <a href="">Format PDF</a>
+    </div>
+
+    <div class="footer-iut">
+      <img src="Logo.jpg" alt="Logo IUT Orsay" />
+    </div>
+  </div>
+</footer>
+
+	
 
 
 </body>
