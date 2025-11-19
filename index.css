@@ -4,38 +4,9 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-}
- /*header {
-	background-color: rgb(43, 43, 119);
-	text-align:center;
-   color: white;
-   margin: 0px;
-   padding: 0px;
- }
- header {
-  background-color: #12112b; 
-  text-align: center;        
-  padding: 20px 10px;        
-  color: #00ffff;            
+   
 }
 
-header .logo img {
-  height: 80px;              
-  vertical-align: middle;
-}
-
-header h1 {
-  font-size: 2em;
-  margin: 10px 0 5px 0;
-}
-
-header .slogan {
-  font-style: italic;
-  font-size: 1.2em;
-  margin: 5px 0 0 0;
-  color: #ffffff;
-} */
 
 header {
   background-color: #12112b;
@@ -46,19 +17,20 @@ header {
 
 
 header .logo {
-  display: flex;
-  flex-direction: column;  
-  align-items: flex-start; 
-  max-width: 200px;        
+  display: flex; 
+  align-items: center;  
+    
 }
 
 header .logo h1 {
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 0 0 5px 0;
+ 
 }
 
 header .logo img {
-  height: 50px;            
+  height: 60px; 
+   margin : 5px;             
 }
 
 
@@ -67,7 +39,9 @@ header .slogan {
   color: #ffffff;          
   font-size: 2em;         
   font-style: normal;      
-  margin: 0 0 20px 0;      
+  margin: 0 0 20px 0; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
 }
 
 header .description {
@@ -75,6 +49,7 @@ header .description {
   max-width: 900px;
   margin: 0 auto;
   line-height: 1.5;
+
 }
 
 
@@ -87,45 +62,13 @@ header .description {
   padding: 0px; 
   }
 
- /*nav {
-    align-items: center;
-    background-color: #05469b;
-    border-bottom: 4px solid #f4e805;
-    margin: 0px;
-    padding: 0px;
-    color: white;
-    width: 10;
-}
-
- nav .auteurs {
-    font-weight: bold;
-    }*/
-
-/*nav {
-  background-color: #1a1a2e; 
-  padding: 10px;
-  text-align: right;          
-  border-bottom: 4px solid #f0f405;
-}
-
-nav a {
-  color: #00ffff;
-  text-decoration: none;
-  margin-right: 15px;        
-nav .auteurs {
-  float: left;              
-  color: #00ffff;
-  font-weight: bold;
-  vertical-align: middle;
-}*/
 
 nav {
   background-color: #1a1a2e; 
   padding: 10px 20px;
   line-height: 40px;         
   text-align: right; 
-  border-bottom: 4px solid #f0f405;
-  position: sticky;           
+  border-bottom: 4px solid #f0f405;      
   top: 0;                     
 }
 
@@ -149,8 +92,7 @@ nav .auteurs {
 }
 
 
-section.destinations {
-  background-color: #a0c4ff;  
+section.destinations { 
   padding: 20px;
   display: flex;
   flex-wrap: wrap;            
@@ -158,6 +100,15 @@ section.destinations {
   justify-content: center;    
 }
 
+main {
+ background-image: url("./images/espace.jpg"); 
+}
+
+main h2 {
+  padding : 10px ; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:white;
+}
 
 article.voyage {
   background-color: #1a1a2e;  
@@ -189,6 +140,32 @@ article.voyage .button:hover {
   background-color: #00bfbf;  
 }
 
+article.voyage h3{
+display: inline-block;
+border-radius: 5px;
+background-color:#00ffff;
+color: black;
+padding : 5px;
+
+
+}
+.accroche{
+  margin: 8px;
+}
+
+.prix{
+  margin: 8px;
+
+}
+
+.info{
+display: block;
+
+}
+
+.ici :hover{
+  
+}
 footer {
   background-color: #1a1a2e; 
   color: #00ffff;
@@ -232,3 +209,5 @@ footer .footer-rapports a:hover {
 footer .footer-iut img {
   height: 60px;
 }
+
+
