@@ -40,7 +40,7 @@ header .slogan {
   font-size: 2em;         
   font-style: normal;      
   margin: 0 0 20px 0; 
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
@@ -52,6 +52,11 @@ header .description {
 
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 
  footer {
@@ -102,12 +107,23 @@ section.destinations {
 
 main {
  background-image: url("./images/espace.jpg"); 
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+ flex-grow: 1;
 }
 
 main h2 {
   padding : 10px ; 
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color:white;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: center;
+}
+
+main h2.contraste {
+  color: white;
+  text-shadow: 0px 0px 6px black;
 }
 
 article.voyage {
