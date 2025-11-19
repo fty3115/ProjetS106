@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 
 <html>
-
+<nav>
+	<span class="auteurs">ALEXIS & MARIE</span>
+	<a href="index.html">
+		<img src="" alt="Logo MegaDodo Travel" />
+	</a>
+	<a href="">VOYAGE</a>
+	<a href="">À PROPOS</a>		
+</nav>
 <head>
 	<meta charset="utf-8">
 	<title>Réservations - DoDo Travels</title>
-
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="reservations.css">
 </head>
 
 <body>
 
 	<header>
 		<div class="logo">
-			<img src="" alt="Logo MegaDodo Travel" />
+			<img src="images/ecusson_dodo.svg" alt="Logo MegaDodo Travel" />
 			<h1>MEGADODO TRAVELS</h1>
 		</div>
 	</header>
@@ -34,7 +42,7 @@
 					<figcaption>Jenkins ALMAR - Guide local sur Terre</figcaption>
 				</figure>
 				<figure>
-					<img src="" alt="">
+					<img src="images/zorg.png" alt="">
 					<figcaption>Azlbu GLOB - Guide local sur Zorg</figcaption>
 				</figure>
 				<figure>
@@ -54,40 +62,52 @@
 		<section>
 			<h2>Réservez votre voyage</h2>
 			<form action="">
-				<h3>Votre voyage</h3>
-				<label for="voyage">Choisissez votre destination</label>
-				<select name="voyage" id="voyage">
-					<option value="0">Choisissez une option</option>
-					<option value="1">Zorg Resort - Planete Zorg</option>
-					<option value="2">Station de Ski Skram - Planete Kram</option>
-					<option value="3">EUROZorg Hotel - Planete Terre</option>
-				</select>
-				<p id="info-crew">Votre voyage sera assuré par : ------</p>
-				<label for="depart">Départ</label>
-				<input type="date" name="depart" id="">
-				<label for="retour">Retour</label>
-				<input type="date" name="retour" id="">
-				<br>
-				<label for="nb_adultes">Nombre d'Adultes : </label>
-				<input type="number" name="nb_adultes" min="1" max="10" value="1">
-				<label for="nb_enfants">Nombre d'Enfants : </label>
-				<input type="number" name="nb_enfants" min="0" max="10" value="0">
-				<h3>Informations personnelles</h3>
-				<p>Nous n'avons besoin que des informations d'un des adultes</p>
-				<label for="prenom">Prénom</label>
-				<input type="text" name="prenom" placeholder="Pierre">
-				<label for="nom">Nom de famille</label>
-				<input type="text" name="nom" placeholder="DUPUIS">
-				<br>
-				<label for="date_naissance">Date de Naissance</label>
-				<input type="date" name="date_naissance">
-				<label for="planete">Planète de résidence</label>
-				<select name="planete" id="planete">
-					<option value="terre">Terre</option>
-					<option value="zorg">Zorg</option>
-					<option value="kram">Kram</option>
-					<option value="autre">Autre planète</option>
-				</select>
+				<fieldset>
+					<legend>1. Votre voyage</legend>
+					<label for="voyage">Choisissez votre destination</label>
+					<select name="voyage" id="voyage">
+						<option value="0">Choisissez une option</option>
+						<option value="1">Zorg Resort - Planete Zorg</option>
+						<option value="2">Station de Ski Skram - Planete Kram</option>
+						<option value="3">EUROZorg Hotel - Planete Terre</option>
+					</select>
+					<p id="info-crew">Votre voyage sera assuré par : ------</p>
+					<label for="depart">Départ</label>
+					<input type="date" name="depart" id="">
+					<label for="retour">Retour</label>
+					<input type="date" name="retour" id="">
+					<br>
+					<label for="nb_adultes">Nombre d'Adultes : </label>
+					<input type="number" name="nb_adultes" min="1" max="10" value="1">
+					<label for="nb_enfants">Nombre d'Enfants : </label>
+					<input type="number" name="nb_enfants" min="0" max="10" value="0">
+				</fieldset>
+				<fieldset>
+					<legend>2. Informations personnelles</legend>
+					<p>Nous n'avons besoin que des informations d'un des adultes</p>
+					<label for="prenom">Prénom</label>
+					<input type="text" name="prenom" placeholder="Pierre">
+					<label for="nom">Nom de famille</label>
+					<input type="text" name="nom" placeholder="DUPUIS">
+					<br>
+					<label for="date_naissance">Date de Naissance</label>
+					<input type="date" name="date_naissance">
+					<label for="planete">Planète de résidence</label>
+					<select name="planete" id="planete">
+						<option value="terre">Terre</option>
+						<option value="zorg">Zorg</option>
+						<option value="kram">Kram</option>
+						<option value="autre">Autre planète</option>
+					</select>
+				</fieldset>
+				<fieldset>
+					<legend>3. Finaliser</legend>
+					<input type="checkbox" name="cgv_ok" id="">
+					<label for="cgv_ok">J'accepte des conditions générales de vente.</label>
+					<br>
+					<input type="submit" value="Réserver maintenant">
+					<input type="reset" value="Réinitialiser le formulaire">
+				</fieldset>
 			</form>
 		</section>
 	</main>
@@ -101,9 +121,9 @@
 <script>
 	var crew = [
 		'------',
-		'Sophie RAYMOND (Capitaine), Dromo GLEB (Maître d\'Hotel), Azlbu GLOB (Guide)',
-		'Barmpo GLUB (Capitaine), Dromo GLEB (Maître d\'Hotel), Ozlo KLOB (Guide)',
-		'Barmpo GLUB (Capitaine), Alfred BUTLER (Maître d\'Hotel), Jenkins ALMAR (Guide)'
+		'Sophie RAYMOND (Capitaine),\n Dromo GLEB (Maître d\'Hotel),\n Azlbu GLOB (Guide)',
+		'Barmpo GLUB (Capitaine),\n Dromo GLEB (Maître d\'Hotel),\n Ozlo KLOB (Guide)',
+		'Barmpo GLUB (Capitaine),\n Alfred BUTLER (Maître d\'Hotel),\n Jenkins ALMAR (Guide)'
 	]
 		
 	document.getElementById("voyage").addEventListener('change', (ev) => {
