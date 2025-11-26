@@ -40,7 +40,7 @@ header .slogan {
   color:#1a1a2e;          
   font-size: 2em;         
   font-style: normal;      
-  margin: 0 0 20px 0; 
+  margin: 40px 0 20px 0; 
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
 }
@@ -50,18 +50,10 @@ header .description {
   max-width: 900px;
   margin: 0 auto;
   line-height: 1.5;
+  font-size: 20px; 
+
 
 }
-
-
-
- footer {
-  background-color: rgb(55, 28, 152);
-  color: white;    
-  text-align: center;  
-  margin: 0px;
-  padding: 0px; 
-  }
 
 
 nav {
@@ -105,65 +97,6 @@ body  {
  background-color: #dfefff; 
 }
 
-/*main h2 {
-  padding : 10px ; 
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color:white;
-}
-
-article.voyage {
-  background-color: #23234d;  
-  color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;        
-  width: 220px;               
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3); 
-  display: flex;
-  flex-direction: column;     
-  align-items: center;        
-  text-align: center;
-}
-
-
-article.voyage .button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 10px;
-  background-color: #00ffff;
-  color: #1a1a2e;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-article.voyage .button:hover {
-  background-color: #00bfbf;  
-}
-
-article.voyage h3{
-display: inline-block;
-border-radius: 5px;
-background-color:#00ffff;
-color: black;
-padding : 5px;
-
-
-}
-.accroche{
-  margin: 8px;
-}
-
-.prix{
-  margin: 8px;
-
-}
-
-.info{
-display: block;
-
-}
-*/
 footer {
   background-color: #1a1a2e; 
   color: #00ffff;
@@ -196,7 +129,7 @@ footer .footer-rapports a {
   display: inline-block;
   color: #00ffff;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 10px 10px;
 }
 
 footer .footer-rapports a:hover {
@@ -208,8 +141,6 @@ footer .footer-iut img {
   height: 60px;
 }
 
-
-/* ----- TITRE ----- */
 main h2 {
     text-align: center;
     font-size: 32px;
@@ -218,8 +149,8 @@ main h2 {
     letter-spacing: 2px;
     background-color:#1a1a2e;
     display: inline-block;
-    border-radius: 15px;           /* arrondit les coins pour la forme de bulle */
-    font-size: 28px;               /* taille du texte */
+    border-radius: 15px;           
+    font-size: 28px;               
     font-weight: bold;
     box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
     padding: 10px 10px;   
@@ -228,14 +159,12 @@ main h2 {
 }
 
 .titre {
-    text-align: center; /* centre tout ce qu'il y a dedans */
+    text-align: center; 
     margin-top: 80px;
    
 }
 
 
-
-/* ----- CONTENEUR DES DESTINATIONS ----- */
 .destinations {
     display: flex;
     flex-direction: column;
@@ -253,15 +182,6 @@ main h2 {
     color:#dfefff;
 }
 
-/* ----- CARTE VOYAGE ----- 
-.voyage {
-    background: #23234d;           
-    color: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.25);
-    transition: 0.3s ease;
- } */
 
 .voyage:hover {
     transform: translateY(-5px);
@@ -269,7 +189,7 @@ main h2 {
 }
 
 
-/* ----- TITRE DU VOYAGE ----- */
+
 .voyage h3 {
     text-align: center;
     font-size: 26px;
@@ -277,7 +197,6 @@ main h2 {
 }
 
 
-/* ----- PARAGRAPHES ----- */
 .accroche {
     font-style: italic;
     margin-bottom: 10px;
@@ -289,14 +208,13 @@ main h2 {
 }
 
 
-/* ----- LISTE PROFIL ----- */
+
 .voyage ul {
     padding-left: 20px;
     margin-bottom: 20px;
 }
 
 
-/* ----- BAS DE CARTE (PRIX + BOUTON) ----- */
 .info {
     display: flex;
     justify-content: space-between;
@@ -309,7 +227,6 @@ main h2 {
 }
 
 
-/* ----- BOUTON RÉSERVER ----- */
 .button {
     background:#f0f405;
     color: black;
@@ -321,31 +238,31 @@ main h2 {
 }
 
 .button:hover {
-    background: #ffe799;
+    background:#edeea5
 }
 
 
 .intro-destinations {
     text-align: center;
     font-style: italic;
-    color: #0a1a4f; /* un bleu foncé pour contraster avec le fond clair */
+    color: #0a1a4f; 
     margin: 10px 30px;
     font-size: 1.1em;
 }
 
 .hero-image {
-    text-align: center; /* centre le contenu de la section */
-    margin: 30px 0;     /* espace au-dessus et en dessous */
+    text-align: center; 
+    margin: 30px 0;     
 }
 
 .hero-image img {
-    max-width: 1000px;   /* limite la largeur à 600px */
-    width: 80%;         /* ou 80% de l’écran si plus petit que 600px */
-    height: auto;       /* conserve les proportions */
-    max-height: 500px;  /* limite la hauteur */
+    max-width: 1000px;   
+    width: 80%;         
+    height: auto;       
+    max-height: 500px;  
     
-    border: 4px solid white;  /* bordure dorée */
+    border: 4px solid white;  
    
-    display: inline-block;       /* nécessaire pour le centrage */
-     transform: scaleX(-1);
+    display: inline-block;       
+    
 }
