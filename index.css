@@ -51,9 +51,15 @@ header .description {
   margin: 0 auto;
   line-height: 1.5;
   font-size: 20px; 
-
-
 }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 
 nav {

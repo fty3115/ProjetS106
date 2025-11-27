@@ -1,3 +1,9 @@
+main {
+   background-color: white !important;
+   background-image: none !important;
+   padding-top: 1rem;
+}
+
 .liste-personnel {
    display: flex;
    justify-content: center;
@@ -21,7 +27,7 @@
    background-color: white;
 }
 
-h2 {
+h1, h2 {
    text-align: center;
 }
 
@@ -45,6 +51,7 @@ form {
 fieldset {
    flex-grow: 1;
    border-radius: 10px;
+   padding: 1rem;
 }
 
 fieldset legend {
