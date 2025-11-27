@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 
-<html>
-<nav>
-	<span class="auteurs">ALEXIS & MARIE</span>
-	<a href="index.html">
-		<img src="./images/ecusson_dodo.svg" alt="Logo MegaDodo Travel" />
-	</a>
-	<a href="index.html">VOYAGE</a>
-	<a href="apropos.html">À PROPOS</a>		
-</nav>
+<html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<title>Réservations - DoDo Travels</title>
-	<link rel="stylesheet" href="index.css">
-	<link rel="stylesheet" href="reservations.css">
-</head>
-
-<body>
-
+		<meta charset="utf-8">
+		<title>Réservations - DoDo Travels</title>
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="reservations.css">
+	</head>
+	
+<body>		
+	<nav>
+		<span class="auteurs">ALEXIS & MARIE</span>
+		<a href="index.html">
+			<img src="./images/ecusson_dodo.svg" alt="Logo MegaDodo Travel" />
+		</a>
+		<a href="index.html">VOYAGE</a>
+		<a href="apropos.html">À PROPOS</a>		
+	</nav>
 	<header>
 		<div class="logo">
 			<img src="./images/ecusson_dodo.svg" alt="Logo MegaDodo Travel" />
@@ -61,7 +60,7 @@
 		</section>
 		<section>
 			<h2>Réservez votre voyage</h2>
-			<form action="">
+			<form>
 				<fieldset>
 					<legend>1. Votre voyage</legend>
 					<label for="voyage">Choisissez votre destination</label>
@@ -73,25 +72,25 @@
 					</select>
 					<p id="info-crew">Votre voyage sera assuré par : ------</p>
 					<label for="depart">Départ</label>
-					<input type="date" name="depart" id="">
+					<input type="date" name="depart" id="depart">
 					<label for="retour">Retour</label>
-					<input type="date" name="retour" id="">
+					<input type="date" name="retour" id="retour">
 					<br>
 					<label for="nb_adultes">Nombre d'Adultes : </label>
-					<input type="number" name="nb_adultes" min="1" max="10" value="1">
+					<input type="number" name="nb_adultes" id="nb_adultes" min="1" max="10" value="1">
 					<label for="nb_enfants">Nombre d'Enfants : </label>
-					<input type="number" name="nb_enfants" min="0" max="10" value="0">
+					<input type="number" name="nb_enfants" id="nb_enfants" min="0" max="10" value="0">
 				</fieldset>
 				<fieldset>
 					<legend>2. Informations personnelles</legend>
 					<p>Nous n'avons besoin que des informations d'un des adultes</p>
 					<label for="prenom">Prénom</label>
-					<input type="text" name="prenom" placeholder="Pierre">
+					<input type="text" name="prenom" id="prenom" placeholder="Pierre">
 					<label for="nom">Nom de famille</label>
-					<input type="text" name="nom" placeholder="DUPUIS">
+					<input type="text" name="nom" id="nom" placeholder="DUPUIS">
 					<br>
 					<label for="date_naissance">Date de Naissance</label>
-					<input type="date" name="date_naissance">
+					<input type="date" name="date_naissance" id="date_naissance">
 					<label for="planete">Planète de résidence</label>
 					<select name="planete" id="planete">
 						<option value="terre">Terre</option>
@@ -102,7 +101,7 @@
 				</fieldset>
 				<fieldset>
 					<legend>3. Finaliser</legend>
-					<input type="checkbox" name="cgv_ok" id="">
+					<input type="checkbox" name="cgv_ok" id="cgv_ok">
 					<label for="cgv_ok">J'accepte des conditions générales de vente.</label>
 					<br>
 					<input type="submit" value="Réserver maintenant">
