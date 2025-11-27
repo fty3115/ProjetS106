@@ -7,6 +7,8 @@
 .liste-personnel figure {
    width: 12vw;
    min-width: 12em;
+   margin: 1rem;
+
 }
 
 .liste-personnel figure figcaption {
