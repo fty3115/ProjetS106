@@ -39,7 +39,7 @@ header .slogan {
   color: #ffffff;          
   font-size: 2em;         
   font-style: normal;      
-  margin: 0 0 20px 0; 
+  margin: 40px 0 20px 0; 
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
 }
@@ -52,15 +52,6 @@ header .description {
 
 }
 
-
-
- footer {
-  background-color: #12112b;
-  color: white;    
-  text-align: center;  
-  margin: 0px;
-  padding: 0px; 
-  }
 
 
 nav {
@@ -92,7 +83,7 @@ nav .auteurs {
 }
 
 .hero {
-    background-image: url('./images/apropos.jpeg'); 
+    background-image: url('./images/10.jpeg'); 
     background-size: cover;       
     background-position: center;  
     height: 450px;                
@@ -112,8 +103,8 @@ nav .auteurs {
 }
 
 .hero-logo {
-    height: 220px;                 
-    margin-bottom: 30px;           
+    height: 230px;                 
+    margin-bottom: 20px;           
 }
 
 .hero-slogan {
@@ -232,7 +223,7 @@ footer .footer-rapports a {
   display: inline-block;
   color: #00ffff;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 10px 10px;
 }
 
 footer .footer-rapports a:hover {
@@ -252,3 +243,4 @@ footer .footer-iut img {
     margin-bottom: 20px;
     color: #12112b;
 }
+
